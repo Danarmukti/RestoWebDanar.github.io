@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>D'RESTO</title>
+</head>
+<body>
+    <!-- Header Navbar-->
+    <header class="bg-[#0d1010] absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex item-center justify-between relative">
+                <div class="p-4">
+                    <a href="#HOME" class="uppercase font-bold text-lg text-[#d8984f] block py-6">D'Resto</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300"></span>
+                        <span class="hamburger-line origin-bottom-left  transition duration-300 ease-in-out"></span>
+                    </button>
+
+
+                    <nav id="menu" class="hidden absolute py-5 px-2 bg-slate-900 shadow-2xl rounded-lg top-full w-full right-4 max-w-[250px] lg:block lg:max-w-full lg:bg-transparent lg:shadow-none lg:static">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#Home" class="text-white py-2 mx-5 flex hover:text-[#ffb35d] font-medium duration-300">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#About" class="text-white py-2 mx-5 flex hover:text-[#ffb35d] font-medium duration-300">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#Recipe" class="text-white py-2 mx-5 flex hover:text-[#ffb35d] font-medium duration-300">Recipe</a>
+                            </li>
+                            <li class="group">
+                                <a href="#Contact" class="text-white py-2 mx-5 flex hover:text-[#ffb35d] font-medium duration-300">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Navbar-->
+    <!-- HOME PAGE -->
+    <section id="Home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 md:w-1/2 lg:w-1/2">
+                    <H1 class="font-semibold tracking-widest md:text-lg lg:text-xl">Welcome To <span class="block text-4xl font-bold tracking-wider text-[#6f1a07] md:text-5xl lg:text-6xl">D'RESTO</span></H1>
+                    <h2 class="font-medium tracking-wide mb-2">Foods | Resto</h2>
+                    <p class="font-medium mb-8 leading-relaxed text-justify max-w-lg">Mau merasakan aneka cita rasa makanan khas indonesia? tapi repot harus keliling tiap daerah untuk merasakan makanannya?. D'Resto menjadi solusi untuk itu, karena D'Resto adalah restoran menyediakan makanan dari hampir semua penjuru Indonesia, reservasi sekarang!</p>
+                    <a href="#Contact" class="text-base font-semibold text-[#fdfefd] bg-[#a8763e] py-3 px-8 rounded-full hover:shadow-lg hover:bg-[#75532c] transition duration-300 ease-in-out">Contact us</a>
+                </div>
+                <div class="w-full self-end px-4 md:w-1/2 lg:w-1/2">
+                    <div class="mt-10 mb-16">
+                        <img src="img/Foods.jpg" alt="foods" class="max-w-full mx-auto sm:scale-80 md:scale-80 lg:scale-100 rounded-xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HOME PAGE -->
+
+    <!-- ABOUT PAGE -->
+    <section id="About" class="bg-[#281e16] pt-36 pb-36">
+        <div class="flex justify-around">
+            <div class="grid grid-cols-1 gap-1">
+                <div class="w-full px-4 mb-10 mx-auto text-center">
+                    <h1 class="uppercase font-extrabold text-[#d8984f] text-3xl mb-16 lg:text-5xl md:text-3xl">about us</h1>
+                    <p class="text-[#fdfefd] text-justify font-medium tracking-normal max-w-xl lg:max-w-md lg:text-xl lg:text-justify md:max-w-md md:text-xl md:text-justify">Indonesia memilik beragam makanan khas dari berbagai daerah
+                        seperti mie aceh berasal dari aceh, bika ambon yang asal nya dari sumatera utara rendang dari sumatera barat dan masih banyak lagi
+                        <br>
+                        <br>
+                        Disinilah D'Resto hadir menyediakan berbagai macam makanan dari berbagai daerah 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT PAGE -->
+    <!-- RECIPE PAGE -->
+    <section id="Recipe" class="pt-[70px] pb-16">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center">
+                    <h4 class="font-medium  text-5xl text-[#6f1a07] mb-2">RECIPE</h4>
+                    <h2 class="font-bold text-3xl mb-4">Best Seller Menu</h2>
+                </div>
+                <div class="w-full px-4 flex flex-wrap justify-center">
+                    <div class="mb-12 p-4 bg-slate-100 rounded-lg shadow-lg md:w-1/2">
+                        <div class="rounded-md overflow-hidden">
+                            <img src="/content/img/mie_aceh.jpg" alt="mie_acehkuah" width="w-full">
+                        </div>
+                        <h3 class="font-bold font-sans uppercase text-3xl mb-2 text-black">Mie Aceh Kuah</h3>
+                        <h2 class="font-medium text-xl text-black">Bahan-Bahan</h3>
+                        <ul class="text-black">
+                            <li>- 500 gr mie basah</li>
+                            <li>- 150 gr udang segar yang sudah dikupas dan <span class="px-[10px] lg:px-[0px]">dibuang kulitnya</span></li>
+                            <li>- 150 gr daging (sapi/kambing) yang sudah direbus <span class="px-[10px] lg:px-[0px]">sebelumnya dan kemudian diiris kecil</li>
+                            <li>- 1 buah tomat, potong panjang berbentuk segitiga</span></li>
+                            <li>- 5 siung bawang merah, iris tipis</li>
+                            <li>- 4 siung bawang putih, iris tipis</li>
+                            <li>- 100 gr toge segar, buang ekornya</li>
+                            <li>- 25 gr daun bawang, iris halus</li>
+                            <li>- 10 gr daun seledri, iris halus</li>
+                            <li>- 600 ml kaldu sapi</li>
+                            <li>- 2 sdm kecap manis</li>
+                            <li>- 2 sdm kecap asin</li>
+                            <li>- 4 sdm minyak goreng</li>
+                            <li class="pt-4 font-semibold">Bahan Halus : </li>
+                            <li>- 7 buah cabai</li>
+                            <li>- ½ ruas jahe</li>
+                            <li>- 3 buah kemiri</li>
+                            <li>- ½ cm kunyit</li>
+                            <li>- ¼ sdt ketumbar</li>
+                            <li>- ¼ sdt jinten</li>
+                            <li>- 3 butir kapulaga</li>
+                            <li>- 3 butir adas manis (anis)</li>
+                        </ul>
+                    </div>
+                    <div class="mb-12 p-4 bg-slate-100 rounded-lg shadow-lg md:w-1/2">
+                        <h2 class="font-medium text-xl text-black">Cara Membuat:</h3>
+                        <ul class="text-black pt-3"> <span class="font-medium">Kuah kaldu:</span>
+                            <h2 class="font-semibold">Langkah 1</h2> 
+                            <li>Siapkan bahan-bahan bumbu halus, kemudian haluskan menggunakan ulekan atau blender.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 2</h2> 
+                            <li>Siapkan wajan dan juga minyak kemudian panaskan di atas kompor.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 3</h2> 
+                            <li>Masukan irisan bawang merah dan bawang putih ke dalam wajan yang telah panas kemudian tumis sebentar.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 4</h2> 
+                            <li>Masukkan bumbu yang telah dihaluskan, kemudian tumis kembali hingga merata dan tercium wangi dari masakan.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 5</h2> 
+                            <li>Siapkan daging dan udang yang telah dikupas kulitnya, kemudian masukan ke dalam tumisan. Aduk rata.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 6</h2> 
+                            <li>Masukan air kaldu secara perlahan.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 7</h2> 
+                            <li>Tambahkan kol, seledri, serta garam. Koreksi rasa.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 8</h2> 
+                            <li>Masak hingga air kaldunya menyusut dan tidak terlalu banyak.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 9</h2> 
+                            <li>Masukan tomat dan juga toge bersama dengan kecap manis dan kecap asin.</li>
+                        </ul>
+                        <ul class="text-black pt-6"> <span class="font-medium">Mie Aceh:</span>
+                            <h2 class="font-semibold">Langkah 1</h2> 
+                            <li>Siapkan wadah yang cukup besar dengan air yang cukup panas.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 2</h2> 
+                            <li>Masukan air panas ke dalam wadah tersebut bersama dengan mie basah. Tunggu hingga mie basah tersebut cukup matang, kemudian angkat dan tiriskan.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 3</h2> 
+                            <li>Siapkan piring atau mangkok saji.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 4</h2> 
+                            <li>Tempatkan mie yang telah matang di atas piring saji. Siram dengan kuah kaldu.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 5</h2> 
+                            <li>Campurkan bumbu dan mie tersebut sampai merata dan tercampur dengan baik.</li>
+                        </ul>
+                        <ul class="text-black pt-3">
+                            <h2 class="font-semibold">Langkah 6</h2> 
+                            <li>Tata emping dan acar sebagai pemanis dan pelengkap. Sajikan selagi hangat.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RECIPE PAGE -->
+    <!-- CONTACT PAGE -->
+    <section id="Contact" class="pt-36 pb-32 bg-[#0d1010]">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-[#d8984f]">Contact</h4>
+                    <h2 class="font-bold font-[Poppins] text-3xl sm:text-4xl lg:text-5xl mb-4 text-[#fdfefd]">Hubungi Kami</h2>
+                </div>
+            </div>
+            <form action="">
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="text-base font-bold text-white">Nama</label>
+                        <input type="text" id="name" class="rounded-md w-full text-[#0d1010] p-3 focus:outline-none focus:ring-[#d8984f] focus:ring-2 focus:border-[#d8984f]" placeholder="Masukan Nama">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="Email" class="text-base font-bold text-white">Email</label>
+                        <input type="email" id="Email" class="rounded-md w-full text-[#0d1010] p-3 focus:outline-none focus:ring-[#d8984f] focus:ring-2 focus:border-[#d8984f]" placeholder="Masukan Email">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="" class="text-base font-bold text-white">Pesan</label>
+                        <textarea type="pesan" id="Pesan" class="rounded-md w-full text-[#0d1010] p-3 focus:outline-none focus:ring-[#d8984f] focus:ring-2 focus:border-[#d8984f] h-32"></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <button class="text-base font-semibold text-white bg-[#6f1a07] hover:bg-[#c94123] px-8 py-3 rounded-lg duration-300 w-full">Kirim</button>
+                    </div>
+                </div>
+            </form>    
+        </div>
+    </section>
+    <!-- CONTACT PAGE -->
+    <!-- FOOTER PAGE -->
+    <footer class="bg-[#0d1010] pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full p-4 mb-12 font-medium md:w-1/2">
+                    <h3 class="text-4xl font-[Poppins] font-bold text-white">D'RESTO</h3>
+                    <h2 class="text-white">Hubungi Kami</h2>
+                    <p class="text-white">danar.mukti35@gmail.com</p>
+                    <p class="text-white">Jl.mangga No. 90 Matraman</p>
+                    <p class="text-white">Jakarta Timur</p>
+                </div>
+                <div class="w-full p-4 mb-12 md:w-1/2">
+                    <h3 class="font-semibold text-white mb-5"> Tautan </h3>
+                    <ul>
+                        <li>
+                            <a href="#Home" class="inline-block text-base text-white hover:text-[#d8984f] mb-2">Home</a>
+                        </li>
+                        <li>
+                            <a href="#About" class="inline-block text-base text-white hover:text-[#d8984f] mb-2">About</a>
+                        </li>
+                        <li>
+                            <a href="#Recipe" class="inline-block text-base text-white hover:text-[#d8984f] mb-2">Recipe</a>
+                        </li>
+                        <li>
+                            <a href="#Contact" class="inline-block text-base text-white hover:text-[#d8984f] mb-2">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-800">
+            <p class="font-medium text-white text-sm text-center">© dibuat oleh <span class="text-[#6f1a07]"> @DanarMukti </span> menggunakan HTML,Tailwindcss</p>
+        </div>
+    </footer>
+    <!-- FOOTER PAGE -->
+<script src="script.js">
+    
+</script>
+</body>
+</html>
